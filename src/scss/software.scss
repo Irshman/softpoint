@@ -1,0 +1,76 @@
+.software {
+    background-color: $clients-bg;
+    padding: 91px 0;
+
+    @media (max-width: $breakpoints480) {
+        padding: 30px 0;
+    }
+
+    &__wrrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 480px;
+        margin: 50px 20px 0;
+        position: relative;
+
+        @media (max-width: $breakpoints1024) {
+            margin: 25px auto;
+            padding: 15px;
+        }
+
+
+        &::before {
+            content: url(../img/software/laptop.png);
+            position: absolute;
+            top: -235px;
+            right: -450px;
+            width: 100%;
+
+            @media (max-width: $breakpoints1280) {
+                right: -280px;
+            }
+
+            @media (max-width: $breakpoints1024) {
+                display: none;
+            }
+            
+            
+        }
+    }
+
+    &__title {
+        font-size: 45px;
+        font-weight: 600;
+        color: $black;
+
+        @media (max-width: $breakpoints480) {
+            font-size: 32px;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba($black, 0.7);
+        margin-top: 20px;
+
+        @media (max-width: $breakpoints480) {
+            font-size: 16px;
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: 201px;
+        margin-top: 45px;
+        padding: 15px 33px;
+
+        @media (max-width: $breakpoints480) {
+            width: 180px;
+        }
+    }
+    
+}

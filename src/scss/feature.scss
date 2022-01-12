@@ -1,0 +1,139 @@
+.feature {
+    margin-top: 110px;
+
+    @media (max-width: $breakpoints1024) {
+        margin-top: 55px;
+    }
+
+    @media (max-width: $breakpoints480) {
+        margin-top: 27px;
+    }
+    
+    &__content {
+        display: flex;
+
+        @media (max-width: $breakpoints1024) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 610px;
+        margin: 0 20px;
+
+        @media (max-width: $breakpoints1024) {
+            margin: 50px auto 0;
+        }
+
+        @media (max-width: $breakpoints768) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        max-width: 282px;
+        border: 1px  solid rgba(65, 77, 68, 0.15);
+        border-radius: 10px;
+        margin: 0 30px 30px 0;
+        transition: $trs;
+
+        &:hover {
+            border: none;
+            box-shadow: 1px 1px 65px 1px rgba(65, 77, 68, 0.15);
+        }
+    }
+
+    &__title {
+        font-size: 21px;
+        font-weight: 600;
+        color: $black;
+        margin-left: 30px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        width: 213px;
+        margin: 9px 30px 35px;
+    }
+
+    &__info {
+        max-width: 548px;
+        margin-top: 80px;
+
+        @media (max-width: $breakpoints1440) {
+            margin-top: 30px;
+        }
+
+        @media (max-width: $breakpoints1024) {
+            margin: 40px auto 0;
+        }
+
+        @media (max-width: $breakpoints768) {
+            font-size: 16px;
+            padding-left: 15px;
+        }
+    }
+
+    &__maintitle {
+        font-size: 45px;
+        font-weight: 600;
+        color: $black;
+
+        @media (max-width: $breakpoints1440) {
+            font-size: 38px;
+        }
+
+        @media (max-width: $breakpoints768) {
+            font-size: 28px;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 480px;
+        margin-top: 20px;
+
+        span {
+            color: rgba($black, .7);
+        }
+
+        @media (max-width: $breakpoints768) {
+            font-size: 16px;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        margin-top: 30px;
+        max-width: 183px;
+
+        @media (max-width: $breakpoints480) {
+            max-width: 120px;
+        }
+    }
+
+    &__ask {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        color: $btn-color;
+        margin: 30px 0 0 30px;
+
+        &:hover {
+            color: $btn-color-hover;
+        }
+
+        @media (max-width: $breakpoints480) {
+            font-size: 16px;
+            margin-left: 15px;
+        }
+    }
+}

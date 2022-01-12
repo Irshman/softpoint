@@ -1,0 +1,24 @@
+.clients {
+    background-color: $clients-bg;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 53px 0;
+
+        @media (max-width: $breakpoints1024) {
+            img {
+                max-width: 70%;
+
+            }
+        }
+
+        @media (max-width: $breakpoints768) {
+            padding: 26px 0;
+        }
+    }
+}
